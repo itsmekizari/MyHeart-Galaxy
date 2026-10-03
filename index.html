@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05030d">
+  <meta name="description" content="A dreamy galaxy of memories.">
+  <title>My Heart • Galaxy Memories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="stars" aria-hidden="true"></div>
+  <div class="nebula nebula-a"></div>
+  <div class="nebula nebula-b"></div>
+
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">MY HEART • MEMORY GALAXY</p>
+      <h1>မင်းနဲ့ပတ်သက်တဲ့<br><span>အမှတ်တရတွေ</span></h1>
+      <p class="subtitle">ကြယ်တွေလို လည်ပတ်နေတဲ့ memory galaxy ✦</p>
+    </header>
+
+    <section class="galaxy" id="galaxy" aria-label="Memory galaxy">
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"></div>
+      <div class="orbit orbit-3"></div>
+      <div class="orbit orbit-4"></div>
+
+      <div class="core-wrap">
+        <div class="core-glow"></div>
+        <button class="core" id="core" type="button" aria-label="Open featured memory">
+          <img src="assets/images/04.webp" alt="Featured memory">
+          <span class="core-ring"></span>
+        </button>
+      </div>
+
+      <div class="satellites" id="satellites"></div>
+    </section>
+
+    <section class="controls" aria-label="Galaxy controls">
+      <button id="toggleMotion" class="glass-btn" type="button">⏸ လည်တာရပ်</button>
+      <button id="shuffle" class="glass-btn" type="button">✦ Random</button>
+      <span class="hint">ပုံကိုနှိပ်ရင် ကြီးပြီးကြည့်လို့ရတယ်</span>
+    </section>
+
+    <section class="caption-card">
+      <p class="tiny">10 MEMORIES • 1 LITTLE UNIVERSE</p>
+      <h2 id="captionTitle">Every memory has its own orbit.</h2>
+      <p id="captionText">လှပတဲ့အရာတွေက အဝေးကကြည့်ရင် ကြယ်တွေလိုပဲ။</p>
+    </section>
+  </main>
+
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <div class="viewer-backdrop" data-close="1"></div>
+    <div class="viewer-card" role="dialog" aria-modal="true" aria-label="Memory viewer">
+      <button class="viewer-close" id="viewerClose" type="button" aria-label="Close">×</button>
+      <img id="viewerImage" src="" alt="Selected memory">
+      <div class="viewer-copy">
+        <p class="tiny" id="viewerIndex"></p>
+        <h3 id="viewerTitle"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
